@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import Navbar from './Animated-React-Website/Navbar'
 
 function App() {
   return (
-    <div className="App">
-       <h1> Hello World </h1>      
+    <div>
+       <Navbar />
     </div>
   );
 }
