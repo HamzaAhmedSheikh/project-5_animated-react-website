@@ -5,6 +5,7 @@ import Home from './Animated-React-Website/component/Home'
 import About from './Animated-React-Website/component/About'
 import Features from './Animated-React-Website/component/Features'
 import Courses from './Animated-React-Website/component/Courses'
+import Offer from './Animated-React-Website/component/Offer'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
        <About />
        <Features />
        <Courses />
+       <Offer />
     </div>
   );
 }
