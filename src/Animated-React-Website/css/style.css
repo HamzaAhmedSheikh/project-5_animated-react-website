@@ -170,3 +170,31 @@ p {
     display: inline-block;
     margin-right: 25px;    
 }
+
+/*-------------------- Courses Section ------------------------ */
+
+#courses {
+    padding: 100px 0;
+}
+
+.course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.courses-right-col {
+    flex-basis: 50%;
+}
+
+.courses-right-col img {
+    width: 100%;
+}
+
+.courses-left-col {
+    flex-basis: 50%;
+}
+
+.course-text {
+    max-width: 350px;
+}
