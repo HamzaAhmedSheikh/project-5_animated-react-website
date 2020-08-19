@@ -7,6 +7,7 @@ import Features from './Animated-React-Website/component/Features'
 import Courses from './Animated-React-Website/component/Courses'
 import Offer from './Animated-React-Website/component/Offer'
 import Contact from './Animated-React-Website/component/Contact'
+import Footer from './Animated-React-Website/component/Footer'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
        <Courses />
        <Offer />
        <Contact />
+       <Footer />
     </div>
   );
 }
