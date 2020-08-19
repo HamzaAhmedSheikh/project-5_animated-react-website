@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, Typography,  Drawer} from '@material-ui/core';
 import { Menu } from '@material-ui/icons'
 import Logo from '../images/logo.png'
+import '../css/style.css'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,8 +48,15 @@ export default function Navbar() {
           open={open}
           onClose={() => setOpen(false)}
         >
-          <div style={{ height: "100%", width: "250px", backgroundColor: 'pink'}}>
-            <h3> This is a drawer </h3>   
+          <div style={{ height: "100%", width: "250px", background: "#f67c92", transition: ".5s"}}>
+            <ul className='ul'>
+              <li><a href="http://animated_react-web.surge.sh/"> HOME </a></li>
+              <li><a href="http://animated_react-web.surge.sh/"> ABOUT US </a></li>
+              <li><a href="http://animated_react-web.surge.sh/"> FEATURES </a></li>
+              <li><a href="http://animated_react-web.surge.sh/"> COURSES </a></li>
+              <li><a href="http://animated_react-web.surge.sh/"> OFFER </a></li>
+              <li><a href="http://animated_react-web.surge.sh/"> CONTACT </a></li>
+            </ul>
           </div>                               
         </Drawer>
     </div>
