@@ -315,3 +315,42 @@ hr {
 .copyright-text, .footer-logo {
     flex-basis: 40%;    
 } 
+
+/*-------------------- SocialIcons ------------------------ */
+
+.social-icons {
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+/*-------------------- Media Qurey ------------------------ */
+
+@media only screen and (max-width: 770px) {
+    #header {
+        background: none;
+    }
+
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .header-text {        
+        margin-top: 100px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+}

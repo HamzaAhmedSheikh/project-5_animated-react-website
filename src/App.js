@@ -8,6 +8,7 @@ import Courses from './Animated-React-Website/component/Courses'
 import Offer from './Animated-React-Website/component/Offer'
 import Contact from './Animated-React-Website/component/Contact'
 import Footer from './Animated-React-Website/component/Footer'
+import SocialIcons from './Animated-React-Website/component/Social-Icons'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
        <Offer />
        <Contact />
        <Footer />
+       <SocialIcons />
     </div>
   );
 }

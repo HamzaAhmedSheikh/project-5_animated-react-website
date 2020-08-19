@@ -2,6 +2,7 @@ import React from 'react'
 
 import Logo from '../images/logo.png'
 
+
 import '../css/style.css'
 
 export const Footer = () => {
@@ -52,7 +53,10 @@ export const Footer = () => {
             </div>              
           </div>
          </div>  
-       </section>          
+       </section>
+
+        
+      
     )
 }
 
