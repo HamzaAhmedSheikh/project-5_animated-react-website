@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Animated-React-Website/component/Navbar'
 import Home from './Animated-React-Website/component/Home'
 import About from './Animated-React-Website/component/About'
-import Feature from './Animated-React-Website/component/Feature'
+import Features from './Animated-React-Website/component/Features'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
        <Navbar />
        <Home />
        <About />
-       <Feature />
+       <Features />
     </div>
   );
 }
