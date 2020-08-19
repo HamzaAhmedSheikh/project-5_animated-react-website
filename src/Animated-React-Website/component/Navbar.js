@@ -12,12 +12,16 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: 'black',
+    color: 'black',  
+    position: "fixed",
+    left: 20,
+    top: "35px",
+    zIndex: 2,
+    cursor: "pointer",
+    
   },
   logo: {
-    flexGrow: 1,  
-    marginTop: '30px',
-    width: "100px"  
+    flexGrow: 1,       
   },
 }));
 
@@ -36,8 +40,8 @@ export default function Navbar() {
           <IconButton onClick={handleDrawer} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <Menu  />
           </IconButton>
-          <Typography variant="h6" className={classes.logo}>
-            <img src={Logo} alt="logo" />
+          <Typography variant="h6">
+            <img src={Logo} className="logo" alt="logo"  />
           </Typography>          
         </Toolbar>
       </AppBar>
