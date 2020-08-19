@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../css/style.css'
+
 import offer from '../images/offer.png'
 
 export const Offer = () => {
