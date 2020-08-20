@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react'
 import '../css/style.css'
 
 import 'animate.css'
-// import useWebAnimations from "@wellyshen/use-web-animations";
+
 
 export const Home = () => {
 
@@ -10,20 +10,16 @@ export const Home = () => {
   const frameTwo = useRef(null);
 
   useLayoutEffect(() => {
-    var spriteFrames = [
+    var animationOne = [
       { transform: 'translateX(40%)' },  
     ];
 
-    var sprite = [
+    var animationTwo = [
       { transform: 'translateY(90%)' },  
-    ];
-
-    // var thridFrame = [
-    //   { transform: 'translateY(90%)' },  
-    // ];
+    ];    
 
     var one = frameOne.current.animate(
-      spriteFrames, {
+      animationOne, {
         easing: "ease-in-out",
         direction: "alternate", 
         duration: 1000,
@@ -32,43 +28,21 @@ export const Home = () => {
       });
 
     var two = frameTwo.current.animate(
-      sprite, {
+      animationTwo, {
         easing: "ease-in-out",
         direction: "alternate", 
         duration: 600,
         delay: 400, 
         iterations: Infinity,
-    }); 
-    
-    // var three = frameTwo.current.animate(
-    //   thridFrame, {
-    //     easing: "ease-in-out",
-    //     direction: "alternate", 
-    //     duration: 600,
-    //     delay: 400, 
-    //     iterations: Infinity,
-    // });  
+    });     
+      
 
 
-      console.log(one, two, );
+      console.log(one, two);
   })
-  
-
-  // const { ref } = useWebAnimations({
-  //   keyframes: {
-  //     transform: ["translate(60px)"],            
-  //   },
-
-  //   timing: {
-  //     delay: 400, 
-  //     duration: 1000, 
-  //     iterations: Infinity,
-  //     direction: "alternate", 
-  //     easing: "ease-in-out", 
-  //   }
     
 
-  // })    
+      
 
 
     return (
@@ -78,13 +52,13 @@ export const Home = () => {
               <div className="header-text">
                 <h1 ref={frameOne}> The purpose is to <br /> teach, bring learning to people </h1>  
                 <span className="square"></span> 
-                <p className="animate__animated animate__lightSpeedInLeft animate__delay-3s">
+                <p className="animate__animated animate__lightSpeedInLeft animate__delay-2s">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed efficitur mauris vel rhoncus maximus. Maecenas pretium nisl nulla, ac placerat metus rhoncus et.
                   Aliquam tincidunt venenatis enim, ut viverra sem sodales eu. Donec blandit faucibus enim tincidunt maximus. Ut mollis
                 </p>
-                <button className="commom-btn animate__animated animate__jackInTheBox animate__delay-4s"> Read More  </button>
+                <button className="commom-btn animate__animated animate__jackInTheBox animate__delay-3s"> Read More  </button>
 
-                 <div className="line  animate__animated animate__wobble animate__delay-5s" ref={frameTwo}>
+                 <div className="line  animate__animated animate__wobble animate__delay-4s" ref={frameTwo}>
                     <span className="line-1"></span> <br />
                     <span className="line-2"></span> <br />
                     <span className="line-3"></span>
