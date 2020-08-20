@@ -3,6 +3,11 @@ import '../css/style.css'
 
 import about from '../images/about.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
+
 export const About = () => {
     return (
         <section id="about">
