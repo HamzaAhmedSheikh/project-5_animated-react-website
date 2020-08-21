@@ -18,9 +18,9 @@ export const Features = () => {
         ease: "ease-in-out",    
     });
 
-    const frameSix = useRef(null);
-    const frameSeven = useRef(null);
-    const frameEight = useRef(null);
+    const refSix = useRef(null);
+    const refSeven = useRef(null);
+    const refEight = useRef(null);
     const animatedLines = useRef(null);
 
     useLayoutEffect(() => {
@@ -42,7 +42,7 @@ export const Features = () => {
         ];
 
 
-        frameSix.current.animate(
+        refSix.current.animate(
             animationSix, {
                 easing: "ease-in-out",
                 direction: "alternate", 
@@ -51,7 +51,7 @@ export const Features = () => {
                 iterations: Infinity,
             });   
 
-        frameSeven.current.animate(
+        refSeven.current.animate(
             animationSeven, {
                 easing: "ease-in-out",
                 direction: "alternate", 
@@ -60,7 +60,7 @@ export const Features = () => {
                 iterations: Infinity,
             }); 
             
-        frameEight.current.animate(            
+        refEight.current.animate(            
             animationEight, {
                 easing: "ease-in-out",
                 direction: "alternate", 
@@ -87,19 +87,19 @@ export const Features = () => {
         <section id="features">
           <div className="feature-row">
             <div className="feature-col">
-               <img src={PictureOne} alt="pic-1" ref={frameSix} />  
+               <img src={PictureOne} alt="pic-1" ref={refSix} />  
                <h4 data-aos="fade-left"> Learn Anywhere </h4>  
                <p data-aos="fade-left"> Switch between your computer, tablet or mobile devices. </p>
             </div>  
 
             <div className="feature-col">
-               <img src={PictureTwo} alt="pic-2" ref={frameSeven} />  
+               <img src={PictureTwo} alt="pic-2" ref={refSeven} />  
                <h4 data-aos="fade-right"> Expert Teachers </h4>  
                <p data-aos="fade-right"> Learn from industry experts who are passionate about teaching. </p> 
             </div>  
 
             <div className="feature-col">
-               <img src={PictureThree} alt="pic-3"  ref={frameEight} />  
+               <img src={PictureThree} alt="pic-3"  ref={refEight} />  
                <h4 data-aos="fade-left"> Unlimted Access </h4>  
                <p data-aos="fade-left"> Choose what you'd like to learn from our extensive subscription. </p>
             </div>              
