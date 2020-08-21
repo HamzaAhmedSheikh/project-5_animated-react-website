@@ -15,7 +15,7 @@ export const About = () => {
 
     AOS.init({
         offset: 300,
-        duration: 1000    
+        duration: 1200    
     });
 
    const frameThree = useRef(null);
@@ -29,11 +29,12 @@ export const About = () => {
       ];
 
     var animationFour = [
-        { transform: 'translateY(-30%)' },  
+        { transform: 'translateY(-30%)' },         
       ];  
 
     var animationFive = [
-        { transform: 'translateY(-10%)' },             
+        { transform: 'translateY(-10%)' },        
+                
       ];  
 
       frameThree.current.animate(
