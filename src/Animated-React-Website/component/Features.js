@@ -106,7 +106,7 @@ export const Features = () => {
           </div> 
 
           <div className="feature-btn"> 
-              <div className="line animate__animated animate__wobble animate__delay-5s" ref={animatedLines}>
+              <div className="line animate__animated animate__wobble animate__delay-10s" ref={animatedLines}>
                   <span className="line-1"></span> <br />
                   <span className="line-2"></span> <br />
                   <span className="line-3"></span>
