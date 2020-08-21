@@ -34,7 +34,7 @@ export const Features = () => {
 
         var animationEight = [            
             { transform: 'translate(-80%)' },
-            { transform: 'translateY(-300%)'},            
+            { transform: 'translateY(-200%)'},            
         ];
 
         var animationLine = [
