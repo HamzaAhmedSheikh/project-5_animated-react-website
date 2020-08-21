@@ -17,9 +17,7 @@ export const Courses = () => {
     });
 
     const refOne = useRef(null);
-    const refTwo = useRef(null);
-    const refThree = useRef(null);
-    const refFour = useRef(null);
+    const refTwo = useRef(null);    
 
     useLayoutEffect(() => {
       var animateRefOne = [
